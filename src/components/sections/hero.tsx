@@ -13,7 +13,7 @@ interface HeroProps {
 
 export function Hero({ featuredProducts, onProductClick, onViewProducts, onContactUs }: HeroProps) {
   return (
-    <section className="relative bg-gradient-to-br from-primary-50 to-primary-100 dark:from-gray-800 dark:to-gray-900 py-2">
+    <section className="relative bg-gradient-to-br from-primary-50 to-primary-100 dark:from-gray-800 dark:to-gray-900 py-4">
       <div className="container">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-center max-w-7xl mx-auto">
           {/* Hero Content */}
@@ -61,7 +61,7 @@ export function Hero({ featuredProducts, onProductClick, onViewProducts, onConta
           </div>
 
           {/* Featured Products Carousel */}
-          <div className="space-y-6">
+          <div className="space-y-1">
             <span className="text-2xl font-bold text-foreground"></span>
             <ProductCarousel
               products={featuredProducts}

@@ -33,7 +33,7 @@ export function ProductCard({ product, onClick }: ProductCardProps) {
       className="group cursor-pointer overflow-hidden hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
       onClick={onClick}
     >
-      <div className="aspect-[4/3] overflow-hidden">
+      <div className="aspect-[4/2] overflow-hidden">
         <Image
           src={product.image}
           alt={product.name}

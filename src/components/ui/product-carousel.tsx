@@ -70,9 +70,9 @@ export function ProductCarousel({ products, onProductClick }: ProductCarouselPro
       {/* Dots Indicator */}
       <div className="flex justify-center mt-4 space-x-2">
         {products.map((_, index) => (
-          <button
+          <Button
             key={index}
-            className={`w-3 h-3 rounded-full transition-colors ${index === currentIndex ? "bg-primary" : "bg-muted"
+            className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? "bg-primary" : "bg-muted"
               }`}
             onClick={() => setCurrentIndex(index)}
           />
