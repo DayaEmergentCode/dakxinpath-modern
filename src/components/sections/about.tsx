@@ -20,9 +20,9 @@ const stats = [
 
 export function About() {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-background relative bg-gradient-to-br from-primary-50 to-primary-100 dark:from-gray-800 dark:to-gray-900 py-4">
       <div className="container">
-        <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 items-center max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 items-center max-w-7xl mx-auto ">
           {/* About Content */}
           <div className="space-y-8">
             <div className="space-y-4">
@@ -69,9 +69,9 @@ export function About() {
             />
 
             {/* Stats */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-6 ">
               {stats.map((stat) => (
-                <div key={stat.label} className="bg-primary/5 rounded-lg p-6 text-center border">
+                <div key={stat.label} className="bg-primary/5 rounded-lg p-6 text-center border bg-card">
                   <div className="text-3xl font-bold text-primary mb-2">{stat.value}</div>
                   <div className="text-sm text-muted-foreground">{stat.label}</div>
                 </div>

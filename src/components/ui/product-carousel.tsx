@@ -52,7 +52,7 @@ export function ProductCarousel({ products, onProductClick }: ProductCarouselPro
       <Button
         variant="outline"
         size="icon"
-        className="absolute left-2 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur-sm"
+        className="absolute left-2 top-1/2 -translate-y-1/2 bg-background backdrop-blur-sm"
         onClick={goToPrevious}
       >
         <ChevronLeft className="h-4 w-4" />
@@ -61,7 +61,7 @@ export function ProductCarousel({ products, onProductClick }: ProductCarouselPro
       <Button
         variant="outline"
         size="icon"
-        className="absolute right-2 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur-sm"
+        className="absolute right-2 top-1/2 -translate-y-1/2 bg-background backdrop-blur-sm"
         onClick={goToNext}
       >
         <ChevronRight className="h-4 w-4" />
@@ -72,7 +72,7 @@ export function ProductCarousel({ products, onProductClick }: ProductCarouselPro
         {products.map((_, index) => (
           <Button
             key={index}
-            className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? "bg-primary" : "bg-muted"
+            className={`w-3 h-3 rounded-full transition-colors ${index === currentIndex ? "bg-primary" : "bg-muted"
               }`}
             onClick={() => setCurrentIndex(index)}
           />

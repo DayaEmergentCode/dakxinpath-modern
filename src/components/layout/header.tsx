@@ -4,6 +4,7 @@ import { useTheme } from "@/components/theme-provider";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Moon, Shield, Sun } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -31,8 +32,8 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-            <Shield className="h-6 w-6 text-primary-foreground" />
+          <div className="flex h-10 w-10 items-center justify-center">
+            <Image className="text-primary-foreground" src="./logo_dak.png" height={100} width={100} alt="DAKXINPATH" />
           </div>
           <span className="text-xl font-bold text-primary">DAKXINPATH®</span>
         </Link>

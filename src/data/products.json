@@ -7,7 +7,7 @@
     "price": 2.5,
     "unit": "kg",
     "origin": "India",
-    "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    "image": "./rice.avif",
     "badge": "Premium",
     "inStock": true,
     "specifications": {
@@ -32,7 +32,7 @@
     "price": 3.2,
     "unit": "kg",
     "origin": "Mexico",
-    "image": "https://images.unsplash.com/photo-1553279768-865429fa0078?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    "image": "mango.avif",
     "badge": "Seasonal",
     "inStock": true,
     "specifications": {
@@ -56,7 +56,7 @@
     "price": 4.8,
     "unit": "kg",
     "origin": "Bolivia",
-    "image": "https://images.unsplash.com/photo-1543362906-acfc16c67564?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    "image": "quinoa.avif",
     "badge": "Organic",
     "inStock": true,
     "specifications": {
@@ -81,7 +81,7 @@
     "price": 2.8,
     "unit": "kg",
     "origin": "Netherlands",
-    "image": "https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    "image": "peppers.avif",
     "badge": "Fresh",
     "inStock": true,
     "specifications": {
@@ -105,7 +105,7 @@
     "price": 6.5,
     "unit": "kg",
     "origin": "India",
-    "image": "https://images.unsplash.com/photo-1615485020161-b8928436de69?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    "image": "turmeric.avif",
     "badge": "Spice",
     "inStock": true,
     "specifications": {
@@ -130,7 +130,7 @@
     "price": 4.2,
     "unit": "kg",
     "origin": "Peru",
-    "image": "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    "image": "avocado.avif",
     "badge": "Premium",
     "inStock": true,
     "specifications": {
@@ -154,7 +154,7 @@
     "price": 1.9,
     "unit": "kg",
     "origin": "Brazil",
-    "image": "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    "image": "black-beans.avif",
     "badge": "Protein",
     "inStock": true,
     "specifications": {
@@ -179,7 +179,7 @@
     "price": 25.0,
     "unit": "kg",
     "origin": "Guatemala",
-    "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    "image": "cardamom.avif",
     "badge": "Premium",
     "inStock": true,
     "specifications": {
