@@ -1,0 +1,199 @@
+[
+  {
+    "id": "basmati-rice",
+    "name": "Premium Basmati Rice",
+    "category": "grains",
+    "description": "Long-grain aromatic rice from India with exceptional fragrance and taste",
+    "price": 2.5,
+    "unit": "kg",
+    "origin": "India",
+    "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    "badge": "Premium",
+    "inStock": true,
+    "specifications": {
+      "moisture": "12-14%",
+      "purity": "99.5%",
+      "shelfLife": "2 years",
+      "packaging": "25kg, 50kg bags",
+      "certifications": ["ISO 22000", "HACCP", "Organic"]
+    },
+    "nutritionalInfo": {
+      "calories": "365 per 100g",
+      "protein": "7.1g",
+      "carbohydrates": "78g",
+      "fiber": "1.3g"
+    }
+  },
+  {
+    "id": "fresh-mangoes",
+    "name": "Fresh Mangoes",
+    "category": "fruits",
+    "description": "Sweet tropical mangoes from Mexico, perfectly ripened for export",
+    "price": 3.2,
+    "unit": "kg",
+    "origin": "Mexico",
+    "image": "https://images.unsplash.com/photo-1553279768-865429fa0078?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    "badge": "Seasonal",
+    "inStock": true,
+    "specifications": {
+      "moisture": "82-86%",
+      "shelfLife": "2-3 weeks refrigerated",
+      "packaging": "4kg, 8kg cartons",
+      "certifications": ["Global GAP", "Fair Trade"]
+    },
+    "nutritionalInfo": {
+      "calories": "60 per 100g",
+      "protein": "0.8g",
+      "carbohydrates": "15g",
+      "fiber": "1.6g"
+    }
+  },
+  {
+    "id": "quinoa",
+    "name": "Organic Quinoa",
+    "category": "grains",
+    "description": "Superfood grains from Bolivia, rich in protein and nutrients",
+    "price": 4.8,
+    "unit": "kg",
+    "origin": "Bolivia",
+    "image": "https://images.unsplash.com/photo-1543362906-acfc16c67564?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    "badge": "Organic",
+    "inStock": true,
+    "specifications": {
+      "moisture": "10-12%",
+      "purity": "99.8%",
+      "shelfLife": "3 years",
+      "packaging": "25kg bags",
+      "certifications": ["Organic", "Fair Trade", "Non-GMO"]
+    },
+    "nutritionalInfo": {
+      "calories": "368 per 100g",
+      "protein": "14.1g",
+      "carbohydrates": "64g",
+      "fiber": "7g"
+    }
+  },
+  {
+    "id": "bell-peppers",
+    "name": "Bell Peppers",
+    "category": "vegetables",
+    "description": "Fresh colorful peppers from Netherlands, crisp and sweet",
+    "price": 2.8,
+    "unit": "kg",
+    "origin": "Netherlands",
+    "image": "https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    "badge": "Fresh",
+    "inStock": true,
+    "specifications": {
+      "moisture": "92-95%",
+      "shelfLife": "2-3 weeks refrigerated",
+      "packaging": "5kg cartons",
+      "certifications": ["Global GAP", "HACCP"]
+    },
+    "nutritionalInfo": {
+      "calories": "31 per 100g",
+      "protein": "1g",
+      "carbohydrates": "7g",
+      "fiber": "2.5g"
+    }
+  },
+  {
+    "id": "turmeric",
+    "name": "Organic Turmeric",
+    "category": "spices",
+    "description": "Premium turmeric powder from India, known for its medicinal properties",
+    "price": 6.5,
+    "unit": "kg",
+    "origin": "India",
+    "image": "https://images.unsplash.com/photo-1615485020161-b8928436de69?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    "badge": "Spice",
+    "inStock": true,
+    "specifications": {
+      "moisture": "8-10%",
+      "purity": "99%",
+      "shelfLife": "3 years",
+      "packaging": "25kg bags",
+      "certifications": ["Organic", "ISO 22000", "Spice Board Certified"]
+    },
+    "nutritionalInfo": {
+      "calories": "312 per 100g",
+      "protein": "9.7g",
+      "carbohydrates": "67g",
+      "fiber": "22.7g"
+    }
+  },
+  {
+    "id": "avocados",
+    "name": "Premium Avocados",
+    "category": "fruits",
+    "description": "Creamy avocados from Peru, rich in healthy fats",
+    "price": 4.2,
+    "unit": "kg",
+    "origin": "Peru",
+    "image": "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    "badge": "Premium",
+    "inStock": true,
+    "specifications": {
+      "moisture": "75-80%",
+      "shelfLife": "2-4 weeks",
+      "packaging": "4kg cartons",
+      "certifications": ["Global GAP", "Fair Trade"]
+    },
+    "nutritionalInfo": {
+      "calories": "160 per 100g",
+      "protein": "2g",
+      "carbohydrates": "9g",
+      "fiber": "6.7g"
+    }
+  },
+  {
+    "id": "black-beans",
+    "name": "Black Beans",
+    "category": "grains",
+    "description": "Premium black beans from Brazil, high in protein and fiber",
+    "price": 1.9,
+    "unit": "kg",
+    "origin": "Brazil",
+    "image": "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    "badge": "Protein",
+    "inStock": true,
+    "specifications": {
+      "moisture": "12-14%",
+      "purity": "99%",
+      "shelfLife": "2 years",
+      "packaging": "25kg, 50kg bags",
+      "certifications": ["Non-GMO", "HACCP"]
+    },
+    "nutritionalInfo": {
+      "calories": "341 per 100g",
+      "protein": "21.6g",
+      "carbohydrates": "63g",
+      "fiber": "15.5g"
+    }
+  },
+  {
+    "id": "cardamom",
+    "name": "Green Cardamom",
+    "category": "spices",
+    "description": "Aromatic spice pods from Guatemala, queen of spices",
+    "price": 25.0,
+    "unit": "kg",
+    "origin": "Guatemala",
+    "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    "badge": "Premium",
+    "inStock": true,
+    "specifications": {
+      "moisture": "8-12%",
+      "purity": "98%",
+      "shelfLife": "2 years",
+      "packaging": "10kg, 25kg bags",
+      "certifications": ["Organic", "Fair Trade", "Spice Board Certified"]
+    },
+    "nutritionalInfo": {
+      "calories": "311 per 100g",
+      "protein": "10.8g",
+      "carbohydrates": "68g",
+      "fiber": "28g"
+    }
+  }
+]
