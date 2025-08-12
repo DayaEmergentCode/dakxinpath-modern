@@ -1,18 +1,19 @@
 "use client";
 
 import { Facebook, Linkedin, Shield, Twitter } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="container py-16">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 mb-12">
+      <div className="container py-16 ">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 mb-12 ">
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-                <Shield className="h-6 w-6 text-primary-foreground" />
+              <div className="flex h-10 w-10 items-center justify-center">
+                <Image className="text-primary-foreground" src="./logo_light.png" height={100} width={100} alt="DAKXINPATH" />
               </div>
               <span className="text-xl font-bold text-primary">DAKXINPATH®</span>
             </div>
@@ -104,7 +105,7 @@ export function Footer() {
               © 2024 DAKXINPATH®. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-sm text-gray-400 hover:text-primary transition-colors">
+              {/* <a href="#" className="text-sm text-gray-400 hover:text-primary transition-colors">
                 Privacy Policy
               </a>
               <a href="#" className="text-sm text-gray-400 hover:text-primary transition-colors">
@@ -112,7 +113,7 @@ export function Footer() {
               </a>
               <a href="#" className="text-sm text-gray-400 hover:text-primary transition-colors">
                 Cookie Policy
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

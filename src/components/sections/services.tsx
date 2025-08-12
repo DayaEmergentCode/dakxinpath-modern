@@ -54,10 +54,11 @@ export function Services() {
                 key={service.title}
                 className="bg-card rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:scale-[1.02] border"
               >
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
-                  <IconComponent className="w-6 h-6 text-primary" />
+                <div className="w-full bg-primary/10 rounded-lg flex items-center justify-left mb-6 space-x-2">
+                  <IconComponent className=" text-primary" />
+                  <h3 className="text-xl font-semibold text-foreground items-center justify-center ">{service.title}</h3>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-4">{service.title}</h3>
+
                 <p className="text-muted-foreground leading-relaxed">{service.description}</p>
               </div>
             );

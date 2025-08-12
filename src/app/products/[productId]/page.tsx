@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { availableProducts } from "@/data/products";
 import { Product } from "@/shared/schema";
 import { ArrowLeft, Globe, Package, Shield } from "lucide-react";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,7 +17,6 @@ export async function generateStaticParams() {
         productId: post.id,
     }))
 }
-
 
 export default async function ProductDetail({ params, }: { params: Promise<{ productId: string }> }) {
 

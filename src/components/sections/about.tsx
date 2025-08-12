@@ -12,10 +12,10 @@ const certifications = [
 ];
 
 const stats = [
-  { value: "50+", label: "Products Exported" },
-  { value: "10+", label: "Countries Served" },
-  { value: "3+", label: "Years Experience" },
-  { value: "100+", label: "Happy Clients" }
+  { value: "50+", label: "Products capability" },
+  { value: "10+", label: "Countries reach" },
+  { value: "3+", label: "Years experience" },
+  { value: "100+", label: "Clients handling capability" }
 ];
 
 export function About() {
@@ -59,11 +59,11 @@ export function About() {
           </div>
 
           {/* About Image & Stats */}
-          <div className="space-y-6">
+          <div className="space-y-6 ">
             <Image
-              src="./wheat-with-hands.avif"
+              src="./logo_light.png"
               alt="Modern Agricultural Facility"
-              className="rounded-xl shadow-lg w-full"
+              className="rounded-xl shadow-lg w-full bg-card"
               width={100}
               height={100}
             />
