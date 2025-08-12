@@ -1,7 +1,6 @@
 "use client"
 import { CheckCircle } from "lucide-react";
 import Image from "next/image";
-import { Contact } from "./contact";
 
 const certifications = [
   "HACCP",

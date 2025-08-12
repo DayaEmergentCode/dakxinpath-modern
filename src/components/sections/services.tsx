@@ -40,7 +40,7 @@ export function Services() {
     <section className="py-20 bg-background">
       <div className="container">
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl font-bold text-foreground">Our Export Services</h2>
+          <h2 className="text-4xl font-bold text-foreground lg:text-5xl">Our Export Services</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Comprehensive export solutions ensuring your products reach global markets efficiently and safely
           </p>
