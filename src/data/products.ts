@@ -10,7 +10,7 @@ export const availableProducts: Product[] = [
     price: 2.5,
     unit: "kg",
     origin: "India",
-    image: "./rice.avif",
+    image: "/rice.avif",
     badge: "Premium",
     inStock: true,
     specifications: {

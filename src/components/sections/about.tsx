@@ -61,7 +61,7 @@ export function About() {
           {/* About Image & Stats */}
           <div className="space-y-6 ">
             <Image
-              src="./logo_light.png"
+              src="/logo_light.png"
               alt="Modern Agricultural Facility"
               className="rounded-xl shadow-lg w-full bg-card"
               width={100}
