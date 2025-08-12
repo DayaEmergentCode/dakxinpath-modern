@@ -3,19 +3,19 @@ import { CheckCircle } from "lucide-react";
 import Image from "next/image";
 
 const certifications = [
-  "ISO 22000",
   "HACCP",
   "FSSAI",
   "APEDA",
   "Spices Board",
-  "Tea Board"
+  "Tea Board",
+  "MSME"
 ];
 
 const stats = [
-  { value: "50+", label: "Products capability" },
+  { value: "50+", label: "Products capacity" },
   { value: "10+", label: "Countries reach" },
   { value: "3+", label: "Years experience" },
-  { value: "100+", label: "Clients handling capability" }
+  { value: "100+", label: "Clients handling capacity" }
 ];
 
 export function About() {

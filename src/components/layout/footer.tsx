@@ -1,6 +1,5 @@
 "use client";
 
-import { Facebook, Linkedin, Shield, Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -20,7 +19,7 @@ export function Footer() {
             <p className="text-gray-400 leading-relaxed">
               Premium agricultural products export company connecting global markets with quality assured produce.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-primary transition-colors">
                 <Twitter className="h-6 w-6" />
               </a>
@@ -30,7 +29,7 @@ export function Footer() {
               <a href="#" className="text-gray-400 hover:text-primary transition-colors">
                 <Facebook className="h-6 w-6" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
@@ -91,9 +90,13 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <div className="space-y-2 text-gray-400">
-              <p>Sri lakshmi Venkateshwara Nilaya, Harohalli Garden, Vijayanagara, Kolar, KA 563101, India</p>
-              <p>Phone: +91 9449495963</p>
-              <p>Email: dakxinpath@gmail.com</p>
+              <p>Sri Lakshmi Venkateshwara Nilaya, Harohalli Garden, Vijayanagara, Kolar, KA, India, 563101.</p>
+              <p>
+                <a href="tel:+919449495963" >Phone: +91 9449495963</a>
+              </p>
+              <p>
+                <a href="mailto:dakxinpath@gmail.com"> Email: dakxinpath@gmail.com </a>
+              </p>
             </div>
           </div>
         </div>

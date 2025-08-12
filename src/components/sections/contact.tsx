@@ -1,6 +1,4 @@
 "use client"
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
@@ -8,8 +6,10 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { contactFormSchema, ContactForm } from "@/shared/schema";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { ContactForm, contactFormSchema } from "@/shared/schema";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import { useForm } from "react-hook-form";
 
 const contactInfo = [
   {
@@ -25,7 +25,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Address",
-    details: ["Sri lakshmi Venkateshwara Nilaya, Harohalli Garden", " Vijayanagara", "Kolar, KA 563101, India"]
+    details: ["Sri Lakshmi Venkateshwara Nilaya", "Harohalli Garden", "Vijayanagara", "Kolar, KA, India, 563101.  "]
   },
   {
     icon: Clock,
@@ -248,9 +248,22 @@ export function Contact() {
                       </div>
                       <div>
                         <h4 className="font-semibold text-foreground">{info.title}</h4>
-                        {info.details.map((detail, index) => (
-                          <p key={index} className="text-muted-foreground">{detail}</p>
-                        ))}
+                        {
+                          info.details.map((detail, index) => {
+
+                            if (info.title === 'Phone') {
+                              return (<p key={index} className="text-muted-foreground">
+                                <a href="tel:+919449495963" > {detail}  </a>
+                              </p>);
+                            } else if (info.title === 'Email') {
+                              return (<p key={index} className="text-muted-foreground">
+                                <a href="mailto:dakxinpath@gmail.com"> {detail}</a>
+                              </p>);
+                            } else {
+                              return (<p key={index} className="text-muted-foreground">{detail}</p>);
+                            }
+                          })
+                        }
                       </div>
                     </div>
                   );
