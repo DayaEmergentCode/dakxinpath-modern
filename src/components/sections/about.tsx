@@ -1,6 +1,7 @@
 "use client"
 import { CheckCircle } from "lucide-react";
 import Image from "next/image";
+import { useTheme } from "../theme-provider";
 
 const certifications = [
   "HACCP",
@@ -19,6 +20,7 @@ const stats = [
 ];
 
 export function About() {
+  const { theme } = useTheme();
   return (
     <>
       <section className="py-20 bg-background relative bg-gradient-to-br from-primary-50 to-primary-100 dark:from-gray-800 dark:to-gray-900 py-4">
@@ -62,7 +64,7 @@ export function About() {
             {/* About Image & Stats */}
             <div className="space-y-6 ">
               <Image
-                src="/logo_light.png"
+                src={"/logo_" + theme + ".png"}
                 alt="Modern Agricultural Facility"
                 className="rounded-xl shadow-lg w-full bg-card"
                 width={100}

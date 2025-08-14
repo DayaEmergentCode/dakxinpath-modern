@@ -12,7 +12,7 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="flex h-10 w-10 items-center justify-center">
-                <Image className="text-primary-foreground" src="/logo_light.png" height={100} width={100} alt="DAKXINPATH" />
+                <Image className="text-primary-foreground" src="/logo_dark.png" height={100} width={100} alt="DAKXINPATH" />
               </div>
               <span className="text-xl font-bold text-primary">DAKXINPATH®</span>
             </div>

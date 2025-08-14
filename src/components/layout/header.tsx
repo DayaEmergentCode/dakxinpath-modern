@@ -33,7 +33,7 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
           <div className="flex h-10 w-10 items-center justify-center">
-            <Image className="text-primary-foreground" src="/logo_light.png" height={100} width={100} alt="DAKXINPATH" />
+            <Image className="text-primary-foreground" src={"/logo_" + theme + ".png"} height={100} width={100} alt="DAKXINPATH" />
           </div>
           <span className="text-xl font-bold text-primary">DAKXINPATH®</span>
         </Link>
