@@ -4,24 +4,54 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { availableProducts } from "@/data/products";
 import { Product } from "@/shared/schema";
 import { ArrowLeft, Globe, Package, Shield } from "lucide-react";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-
+interface PageProps {
+    params: Promise<{ slug: string }>;
+}
 
 export async function generateStaticParams() {
     const posts: Product[] = await fetch('https://raw.githubusercontent.com/DayaEmergentCode/temp-data/refs/heads/main/products.json').then((res) => res.json())
 
     return posts.map((post) => ({
-        productId: post.id,
+        slug: post.id,
     }))
 }
 
-export default async function ProductDetail({ params, }: { params: Promise<{ productId: string }> }) {
 
-    const { productId } = await params;
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
 
-    const product: Product = availableProducts.find((p) => p.id === productId)!;
+
+    const { slug } = await params;
+
+    const product: Product = availableProducts.find((p) => p.id === slug)!;
+
+    if (!product) {
+        return {
+            title: 'Post Not Found',
+            description: 'Sorry, this post does not exist.',
+        };
+    }
+
+    return {
+        title: product.name,
+        description: product.description,
+        keywords: product.name,
+        openGraph: {
+            title: product.name,
+            description: product.description,
+            type: 'article',
+        },
+    };
+}
+export default async function ProductDetail({ params }: PageProps) {
+
+    const { slug } = await params;
+
+
+    const product: Product = availableProducts.find((p) => p.id === slug)!;
 
     product.image = "../" + product.image;
 
