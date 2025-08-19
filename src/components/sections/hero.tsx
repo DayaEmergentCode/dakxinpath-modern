@@ -27,6 +27,9 @@ export function Hero({ featuredProducts, onProductClick, onViewProducts, onConta
               <p className="text-xl text-muted-foreground leading-relaxed">
                 Connecting global markets with the finest agricultural products. Quality assured, internationally certified, sustainably sourced.
               </p>
+              <p className="text-xl text-muted-foreground leading-relaxed">
+                Experience high-quality agricultural exports from India with our comprehensive solutions for pulses, grains, spices, fruits, and vegetables.
+              </p>
             </div>
 
             <div className="flex flex-col gap-4 sm:flex-row">

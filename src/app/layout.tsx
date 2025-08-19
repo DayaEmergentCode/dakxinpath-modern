@@ -45,7 +45,6 @@ export default function RootLayout({
               </div>
               <Toaster />
             </TooltipProvider>
-
           </ThemeProvider>
         </QueryClientProvider>
       </body>

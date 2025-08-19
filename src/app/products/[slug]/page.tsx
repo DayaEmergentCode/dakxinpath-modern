@@ -2,6 +2,7 @@ import { Badge } from "@/components/core/badge";
 import { Button } from "@/components/core/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/core/card";
 import { availableProducts } from "@/data/products";
+import { APP_CONSTANTS } from "@/lib/constants";
 import { Product } from "@/shared/schema";
 import { ArrowLeft, Globe, Package, Shield } from "lucide-react";
 import { Metadata } from "next";
@@ -43,6 +44,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
             title: product.description,
             description: product.description,
             type: 'website',
+            siteName: APP_CONSTANTS.APP_NAME,
         },
     };
 }
