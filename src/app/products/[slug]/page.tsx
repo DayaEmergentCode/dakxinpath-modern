@@ -36,13 +36,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     }
 
     return {
-        title: product.name,
+        title: product.description,
         description: product.description,
-        keywords: product.name,
+        keywords: [product.name, product.badge, product.category],
         openGraph: {
-            title: product.name,
+            title: product.description,
             description: product.description,
-            type: 'article',
+            type: 'website',
         },
     };
 }

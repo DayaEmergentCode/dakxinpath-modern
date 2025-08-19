@@ -1,5 +1,6 @@
 "use client";
 
+import { APP_CONSTANTS } from "@/lib/constants";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,9 +13,9 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="flex h-10 w-10 items-center justify-center">
-                <Image className="text-primary-foreground" src="/logo_dark.png" height={100} width={100} alt="DAKXINPATH" />
+                <Image className="text-primary-foreground" src={APP_CONSTANTS.APP_DARK_LOGO} height={100} width={100} alt={APP_CONSTANTS.APP_NAME} />
               </div>
-              <span className="text-xl font-bold text-primary">DAKXINPATH®</span>
+              <span className="text-xl font-bold text-primary">{APP_CONSTANTS.APP_NAME}</span>
             </div>
             <p className="text-gray-400 leading-relaxed">
               Premium agricultural products export company connecting global markets with quality assured produce.
@@ -105,7 +106,7 @@ export function Footer() {
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
             <p className="text-sm text-gray-400">
-              © 2024 DAKXINPATH®. All rights reserved.
+              {`© ${new Date().getFullYear()} DAKXINPATH®. All rights reserved.`}
             </p>
             <div className="flex space-x-6">
               {/* <a href="#" className="text-sm text-gray-400 hover:text-primary transition-colors">

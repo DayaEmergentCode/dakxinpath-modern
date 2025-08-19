@@ -9,21 +9,25 @@ export const productSchema = z.object({
   unit: z.string(),
   origin: z.string(),
   image: z.string(),
-  badge: z.string().optional(),
+  badge: z.string(),
   inStock: z.boolean(),
-  specifications: z.object({
-    moisture: z.string().optional(),
-    purity: z.string().optional(),
-    shelfLife: z.string().optional(),
-    packaging: z.string().optional(),
-    certifications: z.array(z.string()).optional(),
-  }).optional(),
-  nutritionalInfo: z.object({
-    calories: z.string().optional(),
-    protein: z.string().optional(),
-    carbohydrates: z.string().optional(),
-    fiber: z.string().optional(),
-  }).optional(),
+  specifications: z
+    .object({
+      moisture: z.string().optional(),
+      purity: z.string().optional(),
+      shelfLife: z.string().optional(),
+      packaging: z.string().optional(),
+      certifications: z.array(z.string()).optional(),
+    })
+    .optional(),
+  nutritionalInfo: z
+    .object({
+      calories: z.string().optional(),
+      protein: z.string().optional(),
+      carbohydrates: z.string().optional(),
+      fiber: z.string().optional(),
+    })
+    .optional(),
 });
 
 export type Product = z.infer<typeof productSchema>;

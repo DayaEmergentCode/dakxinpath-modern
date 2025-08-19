@@ -1,13 +1,14 @@
+import { Toaster } from "@/components/core/toaster";
+import { TooltipProvider } from "@/components/core/tooltip";
+import { Footer } from "@/components/layout/footer";
+import { Header } from "@/components/layout/header";
+import { ThemeProvider } from "@/components/theme-provider";
+import { APP_CONSTANTS } from "@/lib/constants";
+import { queryClient } from "@/lib/queryClient";
+import { QueryClientProvider } from "@tanstack/react-query";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Footer } from "@/components/layout/footer";
-import { ThemeProvider } from "@/components/theme-provider";
-import { TooltipProvider } from "@/components/core/tooltip";
-import { Header } from "@/components/layout/header";
-import { Toaster } from "@/components/core/toaster";
-import { QueryClientProvider } from "@tanstack/react-query";
-import { queryClient } from "@/lib/queryClient";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,8 +21,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DAKXINPATH®",
-  description: "Pulses, Spices and fruits export & import services from India quality standards",
+  title: APP_CONSTANTS.APP_TITLE,
+  description: APP_CONSTANTS.APP_DESCRIPTION,
 };
 
 

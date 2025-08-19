@@ -2,6 +2,7 @@
 import { CheckCircle } from "lucide-react";
 import Image from "next/image";
 import { useTheme } from "../theme-provider";
+import { APP_CONSTANTS } from "@/lib/constants";
 
 const certifications = [
   "HACCP",
@@ -64,8 +65,8 @@ export function About() {
             {/* About Image & Stats */}
             <div className="space-y-6 ">
               <Image
-                src={"/logo_" + theme + ".png"}
-                alt="Modern Agricultural Facility"
+                src={APP_CONSTANTS.APP_LOGO(theme)}
+                alt={APP_CONSTANTS.APP_TITLE}
                 className="rounded-xl shadow-lg w-full bg-card"
                 width={100}
                 height={100}

@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { APP_CONSTANTS } from "@/lib/constants";
 
 export function Header() {
   const location = usePathname();
@@ -33,7 +34,7 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
           <div className="flex h-10 w-10 items-center justify-center">
-            <Image className="text-primary-foreground" src={"/logo_" + theme + ".png"} height={100} width={100} alt="DAKXINPATH" />
+            <Image className="text-primary-foreground" src={APP_CONSTANTS.APP_LOGO(theme)} height={100} width={100} alt={APP_CONSTANTS.APP_NAME} />
           </div>
           <span className="text-xl font-bold text-primary">DAKXINPATH®</span>
         </Link>
@@ -44,7 +45,7 @@ export function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className={`text-sm font-medium transition-colors hover:text-primary ${isActive(item.href)
+              className={`text-xl font-medium transition-colors hover:text-primary ${isActive(item.href)
                 ? "text-primary"
                 : "text-muted-foreground"
                 }`}
