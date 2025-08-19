@@ -1,7 +1,7 @@
 export const APP_CONSTANTS = {
   APP_NAME: "DAKXINPATH®",
   APP_DESCRIPTION:
-    "Experience high-quality agricultural exports from India with our comprehensive solutions for pulses, grains, spices, fruits, and vegetables. We ensure your products reach global markets efficiently, safely, and with the utmost care—delivering excellence from farm to destination.",
+    "Experience high-quality agricultural exports from India with our comprehensive solutions for pulses, grains, spices, fruits, and vegetables.",
   APP_TITLE:
     "India's Finest Pulses, Grains, Spices, Fruits & Vegetable Exports",
   APP_LIGHT_LOGO: "/logo_light.png",

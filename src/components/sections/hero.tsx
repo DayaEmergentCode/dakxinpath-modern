@@ -30,6 +30,9 @@ export function Hero({ featuredProducts, onProductClick, onViewProducts, onConta
               <p className="text-xl text-muted-foreground leading-relaxed">
                 Experience high-quality agricultural exports from India with our comprehensive solutions for pulses, grains, spices, fruits, and vegetables.
               </p>
+              <p className="text-xl text-muted-foreground leading-relaxed">
+                We ensure your products reach global markets efficiently, safely, and with the utmost care—delivering excellence from farm to destination.
+              </p>
             </div>
 
             <div className="flex flex-col gap-4 sm:flex-row">
