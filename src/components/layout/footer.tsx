@@ -89,7 +89,7 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
+            <h4 className="text-lg font-semibold mb-4">Address</h4>
             <div className="space-y-2 text-gray-400">
               <p>Sri Lakshmi Venkateshwara Nilaya, Harohalli Garden, Vijayanagara, Kolar, KA, India, 563101.</p>
               <p>
