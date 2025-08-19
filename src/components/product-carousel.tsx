@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { ProductCard } from "@/components/ui/product-card";
+import { Button } from "@/components/core/button";
+import { ProductCard } from "@/components/product-card";
 import { Product } from "@/shared/schema";
 
 interface ProductCarouselProps {

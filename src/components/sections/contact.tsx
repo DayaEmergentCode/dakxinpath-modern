@@ -1,10 +1,10 @@
 "use client"
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/core/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/core/card";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/core/form";
+import { Input } from "@/components/core/input";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/core/select";
+import { Textarea } from "@/components/core/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { ContactForm, contactFormSchema } from "@/shared/schema";
 import { zodResolver } from "@hookform/resolvers/zod";

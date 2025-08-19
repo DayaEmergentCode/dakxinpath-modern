@@ -1,6 +1,6 @@
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/core/badge";
+import { Button } from "@/components/core/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/core/card";
 import { availableProducts } from "@/data/products";
 import { Product } from "@/shared/schema";
 import { ArrowLeft, Globe, Package, Shield } from "lucide-react";

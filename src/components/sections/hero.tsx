@@ -1,7 +1,7 @@
 "use client"
 
-import { Button } from "@/components/ui/button";
-import { ProductCarousel } from "@/components/ui/product-carousel";
+import { Button } from "@/components/core/button";
+import { ProductCarousel } from "@/components/product-carousel";
 import { Product } from "@/shared/schema";
 
 interface HeroProps {

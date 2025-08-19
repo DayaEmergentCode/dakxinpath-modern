@@ -1,8 +1,8 @@
 "use client";
 
 import { useTheme } from "@/components/theme-provider";
-import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Button } from "@/components/core/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/core/sheet";
 import { Menu, Moon, Sun } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";

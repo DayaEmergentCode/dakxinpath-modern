@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { ProductCard } from "@/components/ui/product-card";
+import { Button } from "@/components/core/button";
+import { ProductCard } from "@/components/product-card";
 import { availableProducts } from "@/data/products";
 import { Product } from "@/shared/schema";
 import { useRouter } from "next/navigation";
